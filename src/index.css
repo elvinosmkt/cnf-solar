@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --solar-amber: #f59e0b;
+  --solar-blue: #0ea5e9;
+}
+
+body {
+  @apply bg-slate-950 text-slate-200 antialiased;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+}
+
+.solar-btn-primary {
+  @apply bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition-all flex items-center gap-2;
+}
+
+.solar-btn-outline {
+  @apply border border-amber-500/50 hover:bg-amber-500/10 text-amber-500 font-bold px-6 py-3 rounded-xl transition-all flex items-center gap-2;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-600;
+}
